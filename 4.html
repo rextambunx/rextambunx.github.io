@@ -123,6 +123,16 @@
             margin: 10px 6px;
         }
 
+        .form-container blockquote {
+            padding: 10px 20px;
+            background-color: #af4c4c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px 6px;
+        }
+
         .form-container button:hover {
             background-color: #45a049;
         }
@@ -187,17 +197,21 @@
         <div class="search-container">
             <input type="text" id="searchInput" placeholder="พิมพ์ชื่อที่ต้องการค้นหา...">
             <button onclick="search()">ค้นหา</button>
+            <blockquote onclick="downloadExcel()">บันทึกการเปลี่ยนแปลง</blockquote>
         </div>
         <input type="file" id="fileInput">
         <table id="patientTable">
             <thead>
-                <tr></tr>
+                <tr>   
+                </tr>
             </thead>
             <tbody></tbody>
         </table>
     </div>
 
     <script>
+        let workbook;  // Declare workbook globally to access it in other functions
+
         document.getElementById('fileInput').addEventListener('change', handleFileSelect);
 
         function handleFileSelect(event) {
@@ -206,7 +220,7 @@
 
             reader.onload = function(e) {
                 const data = new Uint8Array(e.target.result);
-                const workbook = XLSX.read(data, { type: 'array' });
+                workbook = XLSX.read(data, { type: 'array' });
                 const sheetName = workbook.SheetNames[0];
                 const worksheet = workbook.Sheets[sheetName];
                 const json = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
@@ -228,6 +242,10 @@
                 row.forEach((cell, cellIndex) => {
                     const cellElement = document.createElement(rowIndex === 0 ? 'th' : 'td');
                     cellElement.textContent = cell;
+                    if (rowIndex !== 0) {
+                        cellElement.classList.add('editable');
+                        cellElement.setAttribute('contenteditable', 'true');
+                    }
                     tr.appendChild(cellElement);
                 });
                 if (rowIndex === 0) {
@@ -257,6 +275,31 @@
                 }
                 tr[i].style.display = match ? '' : 'none';
             }
+        }
+
+        function downloadExcel() {
+            const table = document.getElementById('patientTable');
+            const rows = table.querySelectorAll('tr');
+            const newData = [];
+
+            rows.forEach((row, rowIndex) => {
+                const cells = row.querySelectorAll(rowIndex === 0 ? 'th' : 'td');
+                const rowData = [];
+                cells.forEach(cell => {
+                    rowData.push(cell.textContent);
+                });
+                newData.push(rowData);
+            });
+
+            const newSheet = XLSX.utils.aoa_to_sheet(newData);
+            workbook.Sheets[workbook.SheetNames[0]] = newSheet;
+            const newWorkbook = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' });
+            const blob = new Blob([newWorkbook], { type: 'application/octet-stream' });
+
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'edited_file.xlsx';
+            link.click();
         }
     </script>
 </body>
