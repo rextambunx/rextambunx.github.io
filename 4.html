@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ค้นหาชื่อ</title>
+    <title>Excel Table Search</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,12 +16,6 @@
             background-position: center;
         }
 
-        h2 {
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            text-align: center;
-        }
-
         header {
             background-color: rgba(135, 206, 250, 0.7);
             color: #fff;
@@ -29,6 +24,8 @@
             justify-content: space-between;
             align-items: center;
         }
+
+        h2 {text-align: center;}
 
         .logo img {
             height: 50px;
@@ -39,11 +36,13 @@
             list-style-type: none;
             padding: 0;
             margin: 0;
+            text-align: center;
         }
 
         nav ul li {
             display: inline;
             margin-right: 10px;
+            text-align: center;
         }
 
         nav ul li a {
@@ -52,6 +51,7 @@
             padding: 5px 10px;
             border-radius: 4px;
             background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
         }
 
         nav ul li a:hover {
@@ -85,49 +85,179 @@
             background-color: #45a049;
         }
 
-        .search-results {
-            margin: 20px;
-            padding: 20px;
+        .form-container {
             background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid #ccc;
+            padding: 20px;
             border-radius: 4px;
-            position: relative;
-            width: 95vw; /* กว้างเท่ากับ viewport ทั้งหมด */
-            height: 90vh; /* สูงเท่ากับ viewport ทั้งหมด */
+            margin: 20px;
         }
 
-        .search-results iframe {
-            width: 100%;
-            height: 100%;
+        .form-container input[type="text"],
+        .form-container input[type="number"],
+        .form-container input[type="date"] {
+            width: calc(50% - 10px);
+            margin: 5px;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .form-container input[type="file"] {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.8); 
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
             border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px 6px;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+
+        .name-container {
+            display: flex;
+        }
+
+        .name-container input {
+            flex: 10;
+            margin-right: 20px;
+        }
+
+        #patientTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        #patientTable th, #patientTable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #patientTable th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="https://i.pinimg.com/564x/f0/5d/6d/f05d6dbac52fba9639821c29aac75427.jpg" alt="โลโก้ของคุณ">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="https://rextambunx.github.io/1.html">หน้าแรก</a></li>
-                <li><a href="https://rextambunx.github.io/2.html">ข้อมูลลูกค้า</a></li>
-                <li><a href="https://rextambunx.github.io/3.html">การลงทะเบียน</a></li>
-                <li><a href="#">ตั้งค่า</a></li>
-            </ul>
-        </nav>
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="พิมพ์ชื่อที่ต้องการค้นหา...">
-            <button onclick="search()">ค้นหา</button>
-        </div>
-    </header>
-    <div class="search-results" id="searchResults">
-        <div class="search-container">
-            <h2>ประวัติคนไข้</h2>
-            <input type="text" id="searchInput" placeholder="พิมพ์ชื่อที่ต้องการค้นหา...">
-            <button onclick="search()">ค้นหา</button>
-        </div>
+<header>
+    <div class="logo">
+        <img src="https://i.pinimg.com/564x/f0/5d/6d/f05d6dbac52fba9639821c29aac75427.jpg" alt="โลโก้ของคุณ">
     </div>
-    <script src="script.js"></script>
+    <nav>
+        <ul>
+            <li><a href="https://rextambunx.github.io/1.html">หน้าแรก</a></li>
+            <li><a href="https://rextambunx.github.io/2.html">ข้อมูลลูกค้า</a></li>
+            <li><a href="https://rextambunx.github.io/3.html">การลงทะเบียน</a></li>
+            <li><a href="#">ตั้งค่า</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="form-container">
+        <h2>ประวัติคนไข้</h2>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="พิมพ์ชื่อที่ต้องการค้นหา...">
+            <button onclick="search()">ค้นหา</button>
+        </div>
+        <input type="file" id="fileInput">
+        <table id="patientTable">
+            <thead>
+                <tr></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', handleFileSelect);
+
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                const data = new Uint8Array(e.target.result);
+                const workbook = XLSX.read(data, { type: 'array' });
+                const sheetName = workbook.SheetNames[0];
+                const worksheet = workbook.Sheets[sheetName];
+                const json = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+                displayTable(json);
+            };
+
+            reader.readAsArrayBuffer(file);
+        }
+
+        function displayTable(data) {
+            const tableHead = document.querySelector('#patientTable thead tr');
+            const tableBody = document.querySelector('#patientTable tbody');
+            tableHead.innerHTML = '';
+            tableBody.innerHTML = '';
+
+            data.forEach((row, rowIndex) => {
+                const tr = document.createElement('tr');
+                row.forEach((cell, cellIndex) => {
+                    const cellElement = document.createElement(rowIndex === 0 ? 'th' : 'td');
+                    cellElement.textContent = cell;
+                    tr.appendChild(cellElement);
+                });
+                if (rowIndex === 0) {
+                    tableHead.appendChild(tr);
+                } else {
+                    tableBody.appendChild(tr);
+                }
+            });
+        }
+
+        function search() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const table = document.getElementById('patientTable');
+            const tr = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < tr.length; i++) {
+                let match = false;
+                const tds = tr[i].getElementsByTagName('td');
+                for (let j = 0; j < tds.length; j++) {
+                    if (tds[j]) {
+                        const textValue = tds[j].textContent || tds[j].innerText;
+                        if (textValue.toLowerCase().includes(input)) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                tr[i].style.display = match ? '' : 'none';
+            }
+        }
+    </script>
 </body>
 </html>
