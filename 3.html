@@ -5,72 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ค้นหาชื่อ</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;700&display=swap');
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            background-color: #ed8787c7;
             margin: 0;
             padding: 0;
             background-image: url('background-image.jpg');
             background-size: cover;
             background-position: center;
+            
+            
         }
 
         header {
-            background-color: rgba(135, 206, 250, 0.7);
-            color: #fff;
-            padding: 10px 20px;
+            background: linear-gradient(to right, rgba(205, 205, 205, 0.7), rgba(116, 116, 116, 0.416)); /* ไล่ระดับสีจากซ้ายไปขวา */
+            color: #9A8D72;
+            padding: 1px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาใต้ปุ่ม */
+            transition: box-shadow 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเงา */
         }
 
         h2 {text-align: center;}
 
         .logo img {
-            height: 50px;
+            height: 60px;
             width: auto;
+        }
+
+        .logo1 img {
+            height: 100px;
+            width: auto;
+            display: block;
+            margin: 0 auto; /* จัดตำแหน่งให้รูปภาพอยู่ตรงกลาง */
+            
         }
 
         nav ul {
             list-style-type: none;
-            padding: 0;
-            margin: 0;
-            text-align: center
+            padding: 10;
+            margin: 10;
+            text-align: center;
         }
 
         nav ul li {
             display: inline;
             margin-right: 10px;
-            text-align: center
+            text-align: center;
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            padding: 5px 10px;
-            border-radius: 4px;
+            padding: 5px 15px;
+            border-radius: 100px;
             background-color: rgba(0, 0, 0, 0.5);
             text-align: center;
-
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาใต้ปุ่ม */
+            transition: box-shadow 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเงา */
+            border: 1px solid #000000;
         }
+
+        nav ul li a.style1 {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 70px;
+            border-radius: 100px;
+            background-image: url('path/to/your/image.jpg'); /* แทนที่ path/to/your/image.jpg ด้วย URL ของรูปภาพ */
+            background-size: cover; /* ปรับให้รูปภาพครอบคลุมพื้นที่ทั้งหมดของปุ่ม */
+            background-position: center; /* จัดกึ่งกลางรูปภาพ */
+            background-color: rgba(91, 91, 94, 0.625); /* เพิ่มสีพื้นหลังพร้อมกับค่าความทึบ */
+            text-align: center;
+            display: inline-block; /* ทำให้ block element ภายใน inline เพื่อจัดการ padding ได้ง่าย */
+            font-family: 'IBM Plex Sans Thai', sans-serif; /* ตั้งค่าฟอนต์ไทย */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาใต้ปุ่ม */
+            transition: box-shadow 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเงา */
+            border: 1px solid #000000;
+        }
+
 
         nav ul li a:hover {
             background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2); /* เพิ่มเงาใต้ปุ่ม */
+            transition: box-shadow 0.9s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเงา */
+        }
+
+        nav ul li a.style1:hover {
+            background-color: rgba(91, 91, 94, 0.881);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); /* เพิ่มเงาเมื่อโฮเวอร์ */
         }
 
         .search-container {
+            text-align: center; /* จัดตำแหน่งข้อความตรงกลางภายใน container */ /* ตัวอย่างความสูงของ container เพื่อให้สามารถเห็นการจัดตำแหน่ง */
             display: flex;
-            align-items: center;
+            justify-content: center; /* จัดตำแหน่งตามแนวนอนให้อยู่ตรงกลาง */
+            align-items: center; /* จัดตำแหน่งตามแนวตั้งให้อยู่ตรงกลาง */
+            font-family: 'IBM Plex Sans Thai', sans-serif;
         }
 
         .search-container input[type="text"] {
-            padding: 8px;
+            padding: 5px 20px;
+            font-size: 16px;
+            border: 50px solid #ccc;
+            border-radius: 100px;
+            background-color: rgba(151, 146, 146, 0.8);
+            display: inline-block;
+            margin: 0 auto; /* จัดตำแหน่งให้ input อยู่ตรงกลางแนวนอน */
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาใต้ปุ่ม */
+            transition: box-shadow 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเงา */
+        }
+
+        .form-container input[type="text1"]{
+            width: calc(93%);
+            margin: 5px;
+            padding: 20px;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 4px;
             background-color: rgba(255, 255, 255, 0.8);
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาใต้ปุ่ม */
+            transition: box-shadow 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเงา */ 
         }
-
         .search-container button {
             padding: 8px 12px;
             background-color: #4CAF50;
@@ -79,34 +140,24 @@
             border-radius: 4px;
             cursor: pointer;
             margin-left: 5px;
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            box-shadow: 0 5px 6px rgba(0, 0, 0, 0.4); /* เพิ่มเงาเมื่อโฮเวอร์ */
+            
         }
 
         .search-container button:hover {
             background-color: #45a049;
-        }
-
-        .search-results {
-            margin: 20px;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            position: relative;
-            width: 95vw; /* กว้างเท่ากับ viewport ทั้งหมด */
-            height: 90vh; /* สูงเท่ากับ viewport ทั้งหมด */
-        }
-
-        .search-results iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* เพิ่มเงาเมื่อโฮเวอร์ */
         }
 
         .form-container {
-            background-color: rgba(222, 211, 211, 0.8);
+            background: linear-gradient(to right, rgba(205, 205, 205, 0.7), rgb(179, 179, 179)); 
             padding: 20px;
-            border-radius: 4px;
-            margin: 20px;
+            border-radius: 15px;
+            margin: 15px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาใต้ปุ่ม */
+            transition: box-shadow 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเงา */
+            border: 1px solid #000000;
         }
 
         .form-container input[type="text"],
@@ -119,12 +170,17 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาใต้ปุ่ม */
+            transition: box-shadow 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเงา */
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาใต้ปุ่ม */
+            transition: box-shadow 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเงา */
+            
         }
 
-        .form-container input[type="text1"]{
-            width: calc(93%);
-            margin: 5px;
-            padding: 20px;
+        .form-container input[type="file"] {
+            margin: 10px 0;
+            padding: 10px;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 4px;
@@ -139,15 +195,73 @@
             border-radius: 4px;
             cursor: pointer;
             margin: 10px 6px;
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาใต้ปุ่ม */
+            transition: box-shadow 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเงา */
         }
+
 
         .form-container button:hover {
             background-color: #45a049;
         }
+
         .name-container {
             display: flex;
         }
-        
+
+        .name-container input {
+            flex: 10;
+            margin-right: 20px;
+        }
+
+        #patientTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        #patientTable th, #patientTable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #patientTable th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .search-results {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #000000;
+            border-radius: 10px;
+            position: relative;
+            width: 87vw; /* กว้างเท่ากับ viewport ทั้งหมด */
+            height: 80vh; /* สูงเท่ากับ viewport ทั้งหมด */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาใต้ปุ่ม */
+            transition: box-shadow 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเงา */
+        }
+
+        .search-results iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
         .name-container input {
             flex: 10; /* ทำให้ input ขยายตัวเต็มพื้นที่ที่มีอยู่ */
             margin-right: 20px; /* ระยะห่างระหว่างชื่อและนามสกุล */
@@ -169,13 +283,12 @@
             max-height: 100%;
             display: block;
         }
-        
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="https://i.pinimg.com/564x/f0/5d/6d/f05d6dbac52fba9639821c29aac75427.jpg" alt="โลโก้ของคุณ">
+            <img src="https://rextambunx.github.io/pngwing.com.png" alt="โลโก้ของคุณ">
         </div>
         <nav>
             <ul>
