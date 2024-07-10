@@ -219,7 +219,6 @@
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาใต้ปุ่ม */
             transition: box-shadow 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเงา */
         }
-
         table, th, td {
             border: 1px solid #ddd;
         }
@@ -314,7 +313,7 @@
                     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
                     border-radius: 10px;
                     z-index: 1000;
-                    width: 50%;
+                    width: 65%;
                     height: 80%;
                 }
         
@@ -359,6 +358,26 @@
                     font-family: 'IBM Plex Sans Thai', sans-serif;
                     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาใต้ปุ่ม */
                     transition: box-shadow 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเงา */
+                }
+
+                .new button {
+                    padding: 10px 12px;
+                    background-color: #4CAF50;
+                    color: rgb(0, 0, 0);
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    margin-left: 0; /* ลบการขยับไปทางขวา */
+                    font-family: 'IBM Plex Sans Thai', sans-serif;
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาใต้ปุ่ม */
+                    transition: box-shadow 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเงา */
+                    margin-top: 280px; /* เพิ่มความห่างระยะบน */
+                    margin-bottom: 1px; /* เพิ่มความห่างระยะล่าง */
+                }
+
+                .new button:hover{
+                    background-color: #1be425;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* เพิ่มเงาเมื่อโฮเวอร์ */
                 }
                 
         
@@ -436,7 +455,7 @@
                 #appointmentColor {
                     width: 100%; /* กำหนดให้ความกว้างเต็มพื้นที่ของตัวหนังสือ */
                     height: 100%; /* กำหนดให้เต็มขอบกรอบ */
-                    padding: 10px; /* กำหนดระยะห่างขอบ */
+                    padding: 4px; /* กำหนดระยะห่างขอบ */
                     border: 1px solid #ccc; /* ปรับขอบขอบ */
                     border-radius: 10px; /* ทำให้มนุษย์ โดย */
                 }
@@ -461,7 +480,7 @@
         <button class="style2 open-popup">รายการนัดหมาย</button>
         <button class="style3 open-popup">ตารางลงตรวจ</button>      
         <div class="search-results" id="searchResults">
-            <iframe src="https://calendar.google.com/calendar/embed?height=800&wkst=1&ctz=Asia%2FBangkok&bgcolor=%23ffffff&mode=MONTH&title=CRM%20Login&src=cmV4dGFtYm9uQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y2xhc3Nyb29tMTAwNDA5NjcxMzA5MzUwMjcyNjEwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTAzMDkzNjg4MjY3MzgxMDUyMzk2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19jbGFzc3Jvb20yZjY4MGNjNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y2xhc3Nyb29tMTEzNTczODU4NTU1NDExMzk3MzM0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZmFtaWx5MTI2ODYwNTExNjA1OTIyOTg1OTFAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=Y2xhc3Nyb29tMTE2NzYzMDg4NDkzOTYxNDg3NTM5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTE0MDczOTg2NDE1OTAxNjM3MjM0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTAzNzY5NjU2ODQzMDE5NDA4ODQ4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTE0MDM0NzA1MjU5NjQ4MDUxMTE1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=dGgudGgjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTEwMTg2OTc2MjMwODQ2MjY3NTI0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTEzMjcyMjgwNDk4Nzg3MjMwMDg3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTE2OTUxNjA4MjQzNjQ0MDM2NTQ0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTEzNzc3NDUyOTg3MTkyOTQ0NTc5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237986CB&color=%2333B679&color=%23137333&color=%23007b83&color=%23202124&color=%230047a8&color=%23AD1457&color=%23c26401&color=%237627bb&color=%23202124&color=%23c26401&color=%230B8043&color=%23202124&color=%23137333&color=%23202124&color=%230047a8" style="border:solid 1px #777" width="1179" height="500" frameborder="0" scrolling="no"></iframe>
+            <iframe src="https://calendar.google.com/calendar/embed?height=800&wkst=1&ctz=Asia%2FBangkok&bgcolor=%23ffffff&mode=MONTH&title=CRM%20Login&src=cmV4dGFtYm9uQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y2xhc3Nyb29tMTAwNDA5NjcxMzA5MzUwMjcyNjEwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTAzMDkzNjg4MjY3MzgxMDUyMzk2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y19jbGFzc3Jvb20yZjY4MGNjNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y2xhc3Nyb29tMTEzNTczODU4NTU1NDExMzk3MzM0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZmFtaWx5MTI2ODYwNTExNjA1OTIyOTg1OTFAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=Y2xhc3Nyb29tMTE2NzYzMDg4NDkzOTYxNDg3NTM5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTE0MDczOTg2NDE1OTAxNjM3MjM0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTAzNzY5NjU2ODQzMDE5NDA4ODQ4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTE0MDM0NzA1MjU5NjQ4MDUxMTE1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=dGgudGgjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTEwMTg2OTc2MjMwODQ2MjY3NTI0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTEzMjcyMjgwNDk4Nzg3MjMwMDg3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTE2OTUxNjA4MjQzNjQ0MDM2NTQ0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTEzNzc3NDUyOTg3MTkyOTQ0NTc5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237986CB&color=%2333B679&color=%23137333&color=%23007b83&color=%23202124&color=%230047a8&color=%23AD1457&color=%23c26401&color=%237627bb&color=%23202124&color=%23c26401&color=%230B8043&color=%23202124&color=%23137333&color=%23202124&color=%230047a8" style="border:solid 1px #777" width="1425" height="700" frameborder="0" scrolling="no"></iframe>
         </div>
     <div>
     </div>
@@ -484,11 +503,11 @@
                 <input type="text" id="แพทย์/พนักงาน" placeholder="แพทย์/พนักงาน" required>
                 <div class="style1">
                     <input type="color" id="appointmentColor" value="#5460be" required>
-                </div>
-                <div class="popup-content style8">
-                    <button onclick="search()">ยืนยัน</button>
-                </div>                
-            </div>
+                </div>              
+            </div> 
+            <div class="new">
+                <button onclick="search()">ยืนยัน</button>
+            </div> 
         </div>
     </div>
 
