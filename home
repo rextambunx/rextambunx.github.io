@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Data Display</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+            background-image: url('URL-ของรูปภาพ');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .light-mode {
+            background-color: #ffffff;
+            color: #000;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(to right, #afbfff, #afbfff);
+            color: #9A8D72;
+            padding: 1px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .dark-mode header {
+            background: linear-gradient(to right, rgba(48, 48, 48, 0.7), rgba(29, 29, 29, 0.7));
+            color: #9A8D72;
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 15px;
+            border-radius: 100px;
+            background-color: rgba(32, 106, 253, 0.7);
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+            border: 1px solid #000000;
+        }
+
+        .dark-mode nav ul li a {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border: 1px solid #fff;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.9s ease-in-out;
+        }
+
+        .dark-mode nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #000;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 35px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #515151;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 30px;
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .open-btn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #00136ad0;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 1px;
+            margin: 4px;
+        }
+
+        .dark-mode .open-btn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #5f007ed0;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 1px;
+            margin: 4px;
+        }
+
+        .content {
+            transition: margin-left 0.5s;
+            padding: 4px;
+        }
+
+        .content1 {
+            max-width: 100%; /* กำหนดความกว้างสูงสุดของ container */
+            max-height: 100%;
+            margin: 10px; /* จัดให้อยู่ตรงกลางของหน้าจอ */
+            background-color: #ffffff; /* สีพื้นหลังของ container */
+            padding: 20px; /* กำหนดระยะห่างของเนื้อหาภายใน container */
+            border-radius: 4px; /* กำหนดมุมโค้งของ container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับ container *//
+        }
+
+        .datetime {
+            margin-left: auto; /* เพิ่ม margin-left: auto; เพื่อให้ชิดไปทางขวา */
+            font-size: 18px;
+            padding: 6px 15px;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .image-container img {
+            max-width: 50%;
+            height: auto;
+        }
+        h1 {
+            font-family: 'IBM Plex Sans Thai', sans-serif; /* ใช้ฟอนต์ IBM Plex Sans Thai */
+            text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* เพิ่มแสงเงา */
+            margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+        }
+
+        p {
+            color: #000000;
+            font-family: 'IBM Plex Sans Thai', sans-serif; /* ใช้ฟอนต์ IBM Plex Sans Thai */
+            text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+            margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+        }
+
+        p.style1 {
+            color: #000000;
+            font-family: 'IBM Plex Sans Thai', sans-serif; /* ใช้ฟอนต์ IBM Plex Sans Thai */
+            text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+            margin: 10px auto; /* จัดให้อยู่ตรงกลาง */
+            padding: 20px; /* ระยะห่างภายในกรอบ */
+            border: 2px solid #3498db; /* กำหนดกรอบให้กับข้อความ */
+            border-radius: 8px; /* กำหนดมุมโค้งของกรอบ */
+            max-width: 200px; /* กำหนดความกว้างสูงสุดของกรอบ */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับกรอบ */
+            background-color: #ffffffb4; /* กำหนดสีพื้นหลังของกรอบ */
+        }
+
+
+
+        .dark-mode h1{
+            color: #000000;
+            font-family: 'IBM Plex Sans Thai', sans-serif; /* ใช้ฟอนต์ IBM Plex Sans Thai */
+            text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* เพิ่มแสงเงา */
+            margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+        }
+
+        .button-container {
+            text-align: center; /* ทำให้ปุ่มอยู่ตรงกลาง */
+            margin: 20px 20px; /* เพิ่มระยะห่างด้านบนและล่าง */
+        }
+        .btn{
+            display: inline-block;
+            padding: 5px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #579fec;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px 5px; /* เพิ่มระยะห่างซ้ายขวา */
+        }
+        
+        .btn:hover {
+            background-color: #0057b3c9;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <header>
+        <div id="main" class="content">
+            <button class="open-btn" onclick="toggleSidebar()">☰</button>
+        </div>
+        <div class="logo">
+            <img src="https://www.tgi.or.th/public/image/logo/log_ex.png" alt="โลโก้ของคุณ">
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="themeSwitch">
+            <span class="slider round"></span>
+        </label>
+    </header>
+
+    <div id="mySidebar" class="sidebar">
+        <div class="datetime" id="datetime"></div>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="content1">
+        <h1>Welcome to the TGI SMART_FACTORY</h1>
+        <hr>
+        <p>กิจกรรม 5ส เป็นกระบวนการหนึ่งที่เป็นระบบมีแนวปฏิบัติ ที่เหมาะสมสามารถนำมาใช้เพื่อ
+            ปรับปรุงแก้ไขงานและรักษาสิ่งแวดล้อมในสถานที่ทำงานให้ดีขึ้น ทั้งในส่วนงานด้านการผลิต
+            และด้านการบริการ ซึ่งนำมาใช้ในการเพิ่มประสิทธิภาพการทำงานขององค์กร</p>
+            <hr>
+
+        <p class="style1">
+            นี่คือ Overview ของห้อง SF
+        </p>
+        <div class="button-container">
+            <a href="https://rextambunx.github.io/zr.png" class="btn">Storage 1 </a>
+            <a href="https://rextambunx.github.io/zr.png" class="btn">Storage 2</a>
+            <a href="https://rextambunx.github.io/zr.png" class="btn">Storage 3</a>
+            <a href="https://rextambunx.github.io/zr.png" class="btn">Storage 4</a>
+            <a href="https://rextambunx.github.io/zr.png" class="btn">Storage 5</a>
+            <a href="https://rextambunx.github.io/zr.png" class="btn">Storage 6</a>
+            <a href="https://rextambunx.github.io/zr.png" class="btn">Storage 7</a>
+            <a href="https://rextambunx.github.io/zr.png" class="btn">Storage 8</a>
+            <a href="https://rextambunx.github.io/zr.png" class="btn">Storage 9</a>
+            <a href="https://rextambunx.github.io/zr.png" class="btn">Storage 10</a>
+            <a href="https://rextambunx.github.io/zr.png" class="btn">Storage 11</a>
+            <a href="https://rextambunx.github.io/zr.png" class="btn">Storage 12</a>
+        </div>
+        
+        <div class="image-container">
+            <img src="https://rextambunx.github.io/zr.png" alt="คำอธิบายรูปภาพ">
+        </div>
+        
+        <table id="excelDataTable"></table>
+    </div>
+
+    <table id="excelDataTable"></table>
+
+    <script>
+        const themeSwitch = document.getElementById('themeSwitch');
+        const currentTheme = localStorage.getItem('theme');
+        
+        if (currentTheme) {
+            document.body.classList.add(currentTheme);
+            if (currentTheme === 'dark-mode') {
+                themeSwitch.checked = true;
+            }
+        }
+        
+        themeSwitch.addEventListener('change', () => {
+            document.body.classList.toggle('dark-mode');
+            let theme = 'light-mode';
+            if (document.body.classList.contains('dark-mode')) {
+                theme = 'dark-mode';
+            }
+            localStorage.setItem('theme', theme);
+        });
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById("mySidebar");
+            const mainContent = document.getElementById("main");
+
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+                mainContent.style.marginLeft = "0";
+            } else {
+                sidebar.style.width = "250px";
+                mainContent.style.marginLeft = "250px";
+            }
+        }
+
+        
+        function updateDateTime() {
+            const now = new Date();
+            const datetimeElement = document.getElementById('datetime');
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            datetimeElement.innerHTML = now.toLocaleDateString('th-TH', options);
+        }
+
+        setInterval(updateDateTime, 1000);
+        updateDateTime(); // initial call to set the datetime immediately
+    </script>
+</body>
+</html>
