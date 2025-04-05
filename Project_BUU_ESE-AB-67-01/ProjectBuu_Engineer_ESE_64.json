@@ -1,0 +1,2131 @@
+[
+    {
+        "id": "44e8ecb270d0dea8",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2f380b56f2bcdfee",
+        "type": "group",
+        "z": "44e8ecb270d0dea8",
+        "name": "",
+        "style": {
+            "fill": "#ffbfbf",
+            "label": true,
+            "stroke": "#ff0000"
+        },
+        "nodes": [
+            "b3df4704de972920",
+            "efe90eaa3e0e904c",
+            "7919c6a9246057ec",
+            "9c99e8922750fd3b",
+            "53141cd67b44d9cb",
+            "f4016e43680acac7",
+            "620ea1f821ea9d40",
+            "9cbbf67fe55f74bf",
+            "18ae2bd7252075da",
+            "752356b619b0fe9c",
+            "87dcca91b5b40ff3",
+            "6e98449e11be650e",
+            "531fd220abb8479b",
+            "4240c5965975e8ba",
+            "b2b71da385785745"
+        ],
+        "x": 574,
+        "y": 39,
+        "w": 832,
+        "h": 202
+    },
+    {
+        "id": "f4b0dc713b35363d",
+        "type": "group",
+        "z": "44e8ecb270d0dea8",
+        "name": "",
+        "style": {
+            "fill": "#dbcbe7",
+            "label": true
+        },
+        "nodes": [
+            "b1fbd2888ff6a639",
+            "3372de3eae6cba4d",
+            "048e732333d942bb",
+            "73cddd4d119786c7",
+            "ff1e010a1a8c81e5",
+            "7d68debd1ecfda03",
+            "c527090fd01b28e5",
+            "e4c3633eddfc27f8",
+            "f6e1d1ee17559242",
+            "82741695b4a8fed5",
+            "254a61356722c2ac",
+            "025663bce9c901d3",
+            "58242178a2deceb6",
+            "aec7f91974b9ac19",
+            "482ecc2c9cd458d4",
+            "9cb0d6b50cef17ff",
+            "a9605b9b63c3c5b1",
+            "c6c15b1231a86019",
+            "bdd2763a6a40ffcd"
+        ],
+        "x": 74,
+        "y": 879,
+        "w": 612,
+        "h": 462
+    },
+    {
+        "id": "3f741ed2e7919cfc",
+        "type": "group",
+        "z": "44e8ecb270d0dea8",
+        "name": "",
+        "style": {
+            "stroke": "#ff0000",
+            "fill": "#ffbfbf",
+            "fill-opacity": "0.35",
+            "label": true
+        },
+        "nodes": [
+            "a7177fb902026578",
+            "ba0cf260d24ea36a",
+            "aa0660fb912db01c",
+            "29bd91916baa68f7",
+            "2a2af17810a0b417",
+            "98f75a9ca4e18244"
+        ],
+        "x": 54,
+        "y": 679,
+        "w": 492,
+        "h": 162
+    },
+    {
+        "id": "5ed0d2c4b635ca17",
+        "type": "group",
+        "z": "44e8ecb270d0dea8",
+        "name": "",
+        "style": {
+            "stroke": "#ff0000",
+            "fill": "#ffbfbf",
+            "fill-opacity": "0.54",
+            "label": true
+        },
+        "nodes": [
+            "f1473fb30b9f4412",
+            "99cc203c655a1f1b",
+            "bda7b93c5cc1f7f0",
+            "9b6b3165a13b785f",
+            "8bc42b32c1022a2a"
+        ],
+        "x": 74,
+        "y": 39,
+        "w": 472,
+        "h": 202
+    },
+    {
+        "id": "81efffc62bde73ff",
+        "type": "group",
+        "z": "44e8ecb270d0dea8",
+        "name": "",
+        "style": {
+            "stroke": "#ff0000",
+            "fill": "#ffbfbf",
+            "fill-opacity": "0.31",
+            "label": true
+        },
+        "nodes": [
+            "4501be094d3de442",
+            "8e8af16b30f6a1ec",
+            "fe1b9d8f2b55af8f",
+            "438728ccf12c8266",
+            "8feb89841f61fbad"
+        ],
+        "x": 74,
+        "y": 259,
+        "w": 472,
+        "h": 202
+    },
+    {
+        "id": "6d40fdb3b6df80cd",
+        "type": "group",
+        "z": "44e8ecb270d0dea8",
+        "name": "",
+        "style": {
+            "stroke": "#ff0000",
+            "fill": "#ffbfbf",
+            "fill-opacity": "0.52",
+            "label": true
+        },
+        "nodes": [
+            "4492f530fdfa3f6c",
+            "2d47889b194bc50d",
+            "9665c199e3613b97",
+            "9031aba8036d078b",
+            "1f40ec1e5a39eaec"
+        ],
+        "x": 74,
+        "y": 479,
+        "w": 472,
+        "h": 182
+    },
+    {
+        "id": "77d6babde1a7b86c",
+        "type": "group",
+        "z": "44e8ecb270d0dea8",
+        "name": "",
+        "style": {
+            "stroke": "#ff0000",
+            "fill": "#ffbfbf",
+            "fill-opacity": "0.37",
+            "label": true
+        },
+        "nodes": [
+            "fb0ba56c51939088",
+            "3e2777569737c465",
+            "a54b1766a44078a7",
+            "2741fbba0c2d4b20",
+            "5d6c477a360b3d08",
+            "17eeb056e5d72847",
+            "ccab551fb4cf9907",
+            "f19040d7c554f35c",
+            "61b241409d0ea837",
+            "d374b08b2dd96706",
+            "0704927514abb749",
+            "62f27382e4d27c9b",
+            "80cb74ae0acdde7c",
+            "70fc30b6fc1487d6",
+            "57b36b7032039eb1"
+        ],
+        "x": 574,
+        "y": 259,
+        "w": 832,
+        "h": 282
+    },
+    {
+        "id": "1568adc899879371",
+        "type": "group",
+        "z": "44e8ecb270d0dea8",
+        "name": "",
+        "style": {
+            "stroke": "#ff0000",
+            "label": true,
+            "fill": "#ffbfbf",
+            "fill-opacity": "0.43"
+        },
+        "nodes": [
+            "08de20391d87572e",
+            "45be4783f93153a8",
+            "f2f0f63784a5ba53",
+            "d9aa79adb6b50f0b",
+            "7daf64f201866da3",
+            "943e9d8547257232",
+            "9b6ebdbb6e7e5d23",
+            "08230f9f0b04472f",
+            "1a55041fba2bd88d"
+        ],
+        "x": 574,
+        "y": 559,
+        "w": 832,
+        "h": 182
+    },
+    {
+        "id": "6e98449e11be650e",
+        "type": "mqtt in",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "name": "",
+        "topic": "mpu6050/data",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e71a1eb30b54edf7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 670,
+        "y": 120,
+        "wires": [
+            [
+                "531fd220abb8479b",
+                "752356b619b0fe9c"
+            ]
+        ]
+    },
+    {
+        "id": "531fd220abb8479b",
+        "type": "debug",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "752356b619b0fe9c",
+        "type": "http request",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.64.229:5000/predict",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 830,
+        "y": 120,
+        "wires": [
+            [
+                "87dcca91b5b40ff3",
+                "efe90eaa3e0e904c"
+            ]
+        ]
+    },
+    {
+        "id": "87dcca91b5b40ff3",
+        "type": "debug",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "620ea1f821ea9d40",
+        "type": "comment",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "name": "่json to sting",
+        "info": "แปลงสตริง JSON ให้เป็นออบเจ็กต์",
+        "x": 1170,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b3df4704de972920",
+        "type": "debug",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "efe90eaa3e0e904c",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "name": "function 2",
+        "func": "// รับข้อความที่มีการเข้ารหัส Unicode\nvar unicodeString = msg.payload;\n\n// แปลง Unicode escape sequence ให้เป็นข้อความธรรมดา\nvar decodedString = unicodeString.replace(/\\\\u[\\dA-F]{4}/gi, function (match) {\n    return String.fromCharCode(parseInt(match.replace(\"\\\\u\", \"\"), 16));\n});\n\n// ส่งข้อความที่แปลงแล้ว\nmsg.payload = decodedString;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 120,
+        "wires": [
+            [
+                "b3df4704de972920",
+                "9c99e8922750fd3b"
+            ]
+        ]
+    },
+    {
+        "id": "7919c6a9246057ec",
+        "type": "comment",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "name": "Unicode",
+        "info": "// แปลง Unicode escape sequence ให้เป็นข้อความธรรมดา",
+        "x": 990,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "9c99e8922750fd3b",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "name": "function 1",
+        "func": "// ลบอักขระบรรทัดใหม่และช่องว่างทั้งหมด\nvar cleanPayload = msg.payload.replace(/(\\r\\n|\\n|\\r|\\s)/g, \"\");\n\n// แปลงจากข้อความเป็น JSON\nvar jsonPayload = JSON.parse(cleanPayload);\n\n// ดึงค่าการทำนายและความมั่นใจ\nvar prediction = jsonPayload.prediction;\nvar confidence = jsonPayload.confidence_percent;\n\n// สร้างข้อความที่อ่านง่าย\nmsg.payload = `ผลการทำนาย: ${prediction} (ความมั่นใจ: ${confidence}%)`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 120,
+        "wires": [
+            [
+                "53141cd67b44d9cb",
+                "f4016e43680acac7"
+            ]
+        ]
+    },
+    {
+        "id": "53141cd67b44d9cb",
+        "type": "debug",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f4016e43680acac7",
+        "type": "ui-text-input",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "group": "19a7d87c370ef403",
+        "name": "",
+        "label": "Prediction",
+        "order": 4,
+        "width": 3,
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "Prediction from Model.pkl",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "send",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 1320,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1473fb30b9f4412",
+        "type": "ui-chart",
+        "z": "44e8ecb270d0dea8",
+        "g": "5ed0d2c4b635ca17",
+        "group": "19a7d87c370ef403",
+        "name": "",
+        "label": "Chart GyroX, GyroY, GyroZ",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "HH:mm:ss",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "-40000",
+        "ymax": "40000",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": "3",
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": "10",
+        "className": "",
+        "interpolation": "linear",
+        "x": 380,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a9605b9b63c3c5b1",
+        "type": "inject",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 980,
+        "wires": [
+            [
+                "c6c15b1231a86019"
+            ]
+        ]
+    },
+    {
+        "id": "c6c15b1231a86019",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "function 7",
+        "func": "function getRandomValue() {\n    return Math.floor(Math.random() * 100001) - 50000;\n}\n\nmsg.payload = {\n    ax: getRandomValue(),\n    ay: getRandomValue(),\n    az: getRandomValue(),\n    gx: getRandomValue(),\n    gy: getRandomValue(),\n    gz: getRandomValue()\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 980,
+        "wires": [
+            [
+                "bdd2763a6a40ffcd",
+                "9cb0d6b50cef17ff"
+            ]
+        ]
+    },
+    {
+        "id": "bdd2763a6a40ffcd",
+        "type": "debug",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "debug 11",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "9cb0d6b50cef17ff",
+        "type": "mqtt out",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "",
+        "topic": "mpu6050/data",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e71a1eb30b54edf7",
+        "x": 580,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "99cc203c655a1f1b",
+        "type": "mqtt in",
+        "z": "44e8ecb270d0dea8",
+        "g": "5ed0d2c4b635ca17",
+        "name": "",
+        "topic": "mpu6050/gx",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e71a1eb30b54edf7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "f1473fb30b9f4412"
+            ]
+        ]
+    },
+    {
+        "id": "bda7b93c5cc1f7f0",
+        "type": "mqtt in",
+        "z": "44e8ecb270d0dea8",
+        "g": "5ed0d2c4b635ca17",
+        "name": "",
+        "topic": "mpu6050/gy",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e71a1eb30b54edf7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "f1473fb30b9f4412"
+            ]
+        ]
+    },
+    {
+        "id": "9b6b3165a13b785f",
+        "type": "mqtt in",
+        "z": "44e8ecb270d0dea8",
+        "g": "5ed0d2c4b635ca17",
+        "name": "",
+        "topic": "mpu6050/gz",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e71a1eb30b54edf7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "f1473fb30b9f4412"
+            ]
+        ]
+    },
+    {
+        "id": "4501be094d3de442",
+        "type": "mqtt in",
+        "z": "44e8ecb270d0dea8",
+        "g": "81efffc62bde73ff",
+        "name": "",
+        "topic": "mpu6050/ax",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e71a1eb30b54edf7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 300,
+        "wires": [
+            [
+                "438728ccf12c8266"
+            ]
+        ]
+    },
+    {
+        "id": "8e8af16b30f6a1ec",
+        "type": "mqtt in",
+        "z": "44e8ecb270d0dea8",
+        "g": "81efffc62bde73ff",
+        "name": "",
+        "topic": "mpu6050/ay",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e71a1eb30b54edf7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "438728ccf12c8266"
+            ]
+        ]
+    },
+    {
+        "id": "fe1b9d8f2b55af8f",
+        "type": "mqtt in",
+        "z": "44e8ecb270d0dea8",
+        "g": "81efffc62bde73ff",
+        "name": "",
+        "topic": "mpu6050/az",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e71a1eb30b54edf7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 420,
+        "wires": [
+            [
+                "438728ccf12c8266"
+            ]
+        ]
+    },
+    {
+        "id": "b1fbd2888ff6a639",
+        "type": "inject",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 210,
+        "y": 1100,
+        "wires": [
+            [
+                "3372de3eae6cba4d",
+                "ff1e010a1a8c81e5",
+                "7d68debd1ecfda03",
+                "c527090fd01b28e5",
+                "e4c3633eddfc27f8",
+                "f6e1d1ee17559242"
+            ]
+        ]
+    },
+    {
+        "id": "3372de3eae6cba4d",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "function 3",
+        "func": "msg.payload = Math.floor(Math.random() * 100001) - 50000;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1100,
+        "wires": [
+            [
+                "048e732333d942bb",
+                "025663bce9c901d3"
+            ]
+        ]
+    },
+    {
+        "id": "048e732333d942bb",
+        "type": "debug",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "73cddd4d119786c7",
+        "type": "comment",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "Test ทดสอบข้อมูลโดยที่ไม่ต้องมี Tagada",
+        "info": "",
+        "x": 270,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "ff1e010a1a8c81e5",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "function 4",
+        "func": "msg.payload = Math.floor(Math.random() * 100001) - 50000;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1140,
+        "wires": [
+            [
+                "254a61356722c2ac"
+            ]
+        ]
+    },
+    {
+        "id": "7d68debd1ecfda03",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "function 5",
+        "func": "msg.payload = Math.floor(Math.random() * 100001) - 50000;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1180,
+        "wires": [
+            [
+                "82741695b4a8fed5"
+            ]
+        ]
+    },
+    {
+        "id": "c527090fd01b28e5",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "function 6",
+        "func": "msg.payload = Math.floor(Math.random() * 100001) - 50000;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1220,
+        "wires": [
+            [
+                "482ecc2c9cd458d4"
+            ]
+        ]
+    },
+    {
+        "id": "e4c3633eddfc27f8",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "function 7",
+        "func": "msg.payload = Math.floor(Math.random() * 100001) - 50000;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1260,
+        "wires": [
+            [
+                "aec7f91974b9ac19"
+            ]
+        ]
+    },
+    {
+        "id": "f6e1d1ee17559242",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "function 8",
+        "func": "msg.payload = Math.floor(Math.random() * 100001) - 50000;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1300,
+        "wires": [
+            [
+                "58242178a2deceb6"
+            ]
+        ]
+    },
+    {
+        "id": "82741695b4a8fed5",
+        "type": "mqtt out",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "",
+        "topic": "mpu6050/gz",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e71a1eb30b54edf7",
+        "x": 550,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "254a61356722c2ac",
+        "type": "mqtt out",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "",
+        "topic": "mpu6050/gy",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e71a1eb30b54edf7",
+        "x": 550,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "025663bce9c901d3",
+        "type": "mqtt out",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "",
+        "topic": "mpu6050/gx",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e71a1eb30b54edf7",
+        "x": 550,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "58242178a2deceb6",
+        "type": "mqtt out",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "",
+        "topic": "mpu6050/az",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e71a1eb30b54edf7",
+        "x": 550,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "aec7f91974b9ac19",
+        "type": "mqtt out",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "",
+        "topic": "mpu6050/ay",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e71a1eb30b54edf7",
+        "x": 550,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "482ecc2c9cd458d4",
+        "type": "mqtt out",
+        "z": "44e8ecb270d0dea8",
+        "d": true,
+        "g": "f4b0dc713b35363d",
+        "name": "",
+        "topic": "mpu6050/ax",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e71a1eb30b54edf7",
+        "x": 550,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "438728ccf12c8266",
+        "type": "ui-chart",
+        "z": "44e8ecb270d0dea8",
+        "g": "81efffc62bde73ff",
+        "group": "19a7d87c370ef403",
+        "name": "",
+        "label": "Chart AccX, AccY, AccZ",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "HH:mm:ss",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "-40000",
+        "ymax": "40000",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": "3",
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": "10",
+        "className": "",
+        "interpolation": "linear",
+        "x": 410,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a7177fb902026578",
+        "type": "ui-text",
+        "z": "44e8ecb270d0dea8",
+        "g": "3f741ed2e7919cfc",
+        "group": "19a7d87c370ef403",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Prediction",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": 16,
+        "color": "#000000",
+        "wrapText": true,
+        "className": "",
+        "x": 140,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "ba0cf260d24ea36a",
+        "type": "ui-text",
+        "z": "44e8ecb270d0dea8",
+        "g": "3f741ed2e7919cfc",
+        "group": "19a7d87c370ef403",
+        "order": 11,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Gyroscope (degrees per second)",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": 16,
+        "color": "#000000",
+        "wrapText": true,
+        "className": "",
+        "x": 360,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "aa0660fb912db01c",
+        "type": "ui-text",
+        "z": "44e8ecb270d0dea8",
+        "g": "3f741ed2e7919cfc",
+        "group": "19a7d87c370ef403",
+        "order": 7,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Accelerometer (gravity)",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": 16,
+        "color": "#000000",
+        "wrapText": true,
+        "className": "",
+        "x": 190,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "29bd91916baa68f7",
+        "type": "ui-text",
+        "z": "44e8ecb270d0dea8",
+        "g": "3f741ed2e7919cfc",
+        "group": "19a7d87c370ef403",
+        "order": 15,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": " Explain",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": 16,
+        "color": "#000000",
+        "wrapText": true,
+        "className": "",
+        "x": 380,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "0704927514abb749",
+        "type": "ui-text-input",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "group": "19a7d87c370ef403",
+        "name": "Gyro_X",
+        "label": "Gyro_X",
+        "order": 12,
+        "width": "3",
+        "height": "1",
+        "topic": "payload.di1",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "<i class=\"fa fa-rss\" aria-hidden=\"true\"></i>",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "rss",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 980,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "62f27382e4d27c9b",
+        "type": "ui-text-input",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "group": "19a7d87c370ef403",
+        "name": "Gyro_Y",
+        "label": "Gyro_Y",
+        "order": 13,
+        "width": "3",
+        "height": "1",
+        "topic": "gyro_y",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "rss",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 980,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80cb74ae0acdde7c",
+        "type": "ui-text-input",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "group": "19a7d87c370ef403",
+        "name": "Gyro_Z",
+        "label": "Gyro_Z",
+        "order": 14,
+        "width": "3",
+        "height": "1",
+        "topic": "gyro_z",
+        "topicType": "str",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "rss",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 980,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb0ba56c51939088",
+        "type": "ui-text-input",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "group": "19a7d87c370ef403",
+        "name": " Acc_X",
+        "label": " Acc_X",
+        "order": 8,
+        "width": "3",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "rss",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 970,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e2777569737c465",
+        "type": "ui-text-input",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "group": "19a7d87c370ef403",
+        "name": " Acc_Y",
+        "label": " Acc_Y",
+        "order": 9,
+        "width": "3",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "rss",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 970,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a54b1766a44078a7",
+        "type": "ui-text-input",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "group": "19a7d87c370ef403",
+        "name": " Acc_Z",
+        "label": " Acc_Z",
+        "order": 10,
+        "width": "3",
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "rss",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 970,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9cbbf67fe55f74bf",
+        "type": "ui-audio",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "group": "19a7d87c370ef403",
+        "name": "",
+        "order": 16,
+        "width": 9,
+        "height": 0,
+        "src": "",
+        "autoplay": "off",
+        "loop": "off",
+        "muted": "off",
+        "x": 1320,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18ae2bd7252075da",
+        "type": "inject",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "https://github.com/rextambunx/rextambunx.github.io/raw/master/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B6%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%202%20(online-audio-converter.com).mp3",
+        "payloadType": "str",
+        "x": 1190,
+        "y": 200,
+        "wires": [
+            [
+                "9cbbf67fe55f74bf"
+            ]
+        ]
+    },
+    {
+        "id": "4240c5965975e8ba",
+        "type": "comment",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "name": "Prediction",
+        "info": "เป็นส่วนที่ไว้สำหรับทำนายผลของ ดินสไลด์",
+        "x": 840,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b2b71da385785745",
+        "type": "comment",
+        "z": "44e8ecb270d0dea8",
+        "g": "2f380b56f2bcdfee",
+        "name": "Total input",
+        "info": "",
+        "x": 680,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "2741fbba0c2d4b20",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "name": "function 9",
+        "func": "let gx_dps = msg.payload.gx / 131.0;\nmsg.payload = gx_dps.toFixed(2) + \" °/s\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 300,
+        "wires": [
+            [
+                "0704927514abb749"
+            ]
+        ]
+    },
+    {
+        "id": "5d6c477a360b3d08",
+        "type": "mqtt in",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "name": "",
+        "topic": "mpu6050/data",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e71a1eb30b54edf7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 670,
+        "y": 300,
+        "wires": [
+            [
+                "2741fbba0c2d4b20",
+                "17eeb056e5d72847",
+                "ccab551fb4cf9907",
+                "f19040d7c554f35c",
+                "61b241409d0ea837",
+                "d374b08b2dd96706"
+            ]
+        ]
+    },
+    {
+        "id": "17eeb056e5d72847",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "name": "function 10",
+        "func": "let gx_dps = msg.payload.gy / 131.0;\nmsg.payload = gx_dps.toFixed(2) + \" °/s\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 340,
+        "wires": [
+            [
+                "62f27382e4d27c9b"
+            ]
+        ]
+    },
+    {
+        "id": "ccab551fb4cf9907",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "name": "function 11",
+        "func": "let gx_dps = msg.payload.gz / 131.0;\nmsg.payload = gx_dps.toFixed(2) + \" °/s\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 380,
+        "wires": [
+            [
+                "80cb74ae0acdde7c"
+            ]
+        ]
+    },
+    {
+        "id": "f19040d7c554f35c",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "name": "function 12",
+        "func": "let ay_ms2 = msg.payload.ax / 16384.0 * 9.81;\nmsg.payload = ay_ms2.toFixed(2) + \" m/s²\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 420,
+        "wires": [
+            [
+                "fb0ba56c51939088"
+            ]
+        ]
+    },
+    {
+        "id": "61b241409d0ea837",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "name": "function 13",
+        "func": "let ay_ms2 = msg.payload.ay / 16384.0 * 9.81;\nmsg.payload = ay_ms2.toFixed(2) + \" m/s²\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 460,
+        "wires": [
+            [
+                "3e2777569737c465"
+            ]
+        ]
+    },
+    {
+        "id": "d374b08b2dd96706",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "name": "function 14",
+        "func": "let ay_ms2 = msg.payload.az / 16384.0 * 9.81;\nmsg.payload = ay_ms2.toFixed(2) + \" m/s²\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 500,
+        "wires": [
+            [
+                "a54b1766a44078a7"
+            ]
+        ]
+    },
+    {
+        "id": "08de20391d87572e",
+        "type": "ui-iframe",
+        "z": "44e8ecb270d0dea8",
+        "g": "1568adc899879371",
+        "name": "",
+        "group": "62434c3fc00562df",
+        "order": 1,
+        "src": "https://docs.google.com/spreadsheets/d/1kSrzHBaoSQ_yZ8X-UDrmvMBLsO94cYQ49c6-nRb_E8o/edit?usp=sharing",
+        "width": "15",
+        "height": "14",
+        "x": 850,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "8bc42b32c1022a2a",
+        "type": "comment",
+        "z": "44e8ecb270d0dea8",
+        "g": "5ed0d2c4b635ca17",
+        "name": "กราฟ ไจโรสโกป (Gyroscope)",
+        "info": "",
+        "x": 400,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "8feb89841f61fbad",
+        "type": "comment",
+        "z": "44e8ecb270d0dea8",
+        "g": "81efffc62bde73ff",
+        "name": "กราฟ ความเร่งในแต่ละแกน",
+        "info": "",
+        "x": 410,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "4492f530fdfa3f6c",
+        "type": "mqtt in",
+        "z": "44e8ecb270d0dea8",
+        "g": "6d40fdb3b6df80cd",
+        "name": "",
+        "topic": "mpu6050/data",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e71a1eb30b54edf7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 520,
+        "wires": [
+            [
+                "2d47889b194bc50d"
+            ]
+        ]
+    },
+    {
+        "id": "2d47889b194bc50d",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "g": "6d40fdb3b6df80cd",
+        "name": "function 18",
+        "func": "// รับค่าเซ็นเซอร์\nvar ax = msg.payload.ax;\nvar ay = msg.payload.ay;\nvar az = msg.payload.az;\n\n// 1. แปลงจากหน่วย raw → g-force (สมมุติว่า 1g = 16384 ตาม default MPU6050)\nvar ax_g = ax / 16384;\nvar ay_g = ay / 16384;\nvar az_g = az / 16384;\n\n// 2. แปลงจาก g → cm/s² (1g ≈ 980 cm/s²)\nvar ax_cm = ax_g * 980;\nvar ay_cm = ay_g * 980;\nvar az_cm = az_g * 980;\n\n// 3. หาขนาดเวกเตอร์รวม\nvar Amax = Math.sqrt(ax_cm ** 2 + ay_cm ** 2 + az_cm ** 2);\n\n// 4. คำนวณค่าริกเตอร์อย่างคร่าวๆ (สมมุติ K = 1.5)\nvar richter = Math.log10(Amax) + 1;\n\n// ปัดทศนิยม\nrichter = Math.round(richter * 100) / 100;\n\n// ส่งออก\nmsg.payload = `ค่าประมาณแรงสั่น (Richter): ${richter}`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 520,
+        "wires": [
+            [
+                "9665c199e3613b97",
+                "9031aba8036d078b"
+            ]
+        ]
+    },
+    {
+        "id": "9665c199e3613b97",
+        "type": "debug",
+        "z": "44e8ecb270d0dea8",
+        "g": "6d40fdb3b6df80cd",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "2a2af17810a0b417",
+        "type": "ui-text",
+        "z": "44e8ecb270d0dea8",
+        "g": "3f741ed2e7919cfc",
+        "group": "19a7d87c370ef403",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "The intensity of the earthquake",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": 16,
+        "color": "#000000",
+        "wrapText": true,
+        "className": "",
+        "x": 210,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "9031aba8036d078b",
+        "type": "ui-text-input",
+        "z": "44e8ecb270d0dea8",
+        "g": "6d40fdb3b6df80cd",
+        "group": "19a7d87c370ef403",
+        "name": "",
+        "label": "The intensity of the earthquake",
+        "order": 6,
+        "width": 3,
+        "height": "1",
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "Prediction from Model.pkl",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "send",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 390,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f40ec1e5a39eaec",
+        "type": "comment",
+        "z": "44e8ecb270d0dea8",
+        "g": "6d40fdb3b6df80cd",
+        "name": "คำนวนค่า Ricter",
+        "info": "คำนวนค่า Ricter",
+        "x": 180,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "45be4783f93153a8",
+        "type": "mqtt in",
+        "z": "44e8ecb270d0dea8",
+        "g": "1568adc899879371",
+        "name": "",
+        "topic": "mpu6050/data",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e71a1eb30b54edf7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 670,
+        "y": 600,
+        "wires": [
+            [
+                "d9aa79adb6b50f0b",
+                "943e9d8547257232"
+            ]
+        ]
+    },
+    {
+        "id": "f2f0f63784a5ba53",
+        "type": "http request",
+        "z": "44e8ecb270d0dea8",
+        "g": "1568adc899879371",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSctuaBiO6F-jguNwSCo2_JjZvuH4sjL8qv_AuPyotKkCIhyaQ/formResponse?usp=pp_url&entry.1548682041={{payload.di1}}&entry.1252063693={{payload.di2}}&entry.1950865653={{payload.di3}}&entry.2137892068={{payload.di4}}&entry.1616936080={{payload.di5}}&entry.570125696={{payload.di6}}&entry.151490554={{payload.prediction}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1210,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d9aa79adb6b50f0b",
+        "type": "http request",
+        "z": "44e8ecb270d0dea8",
+        "g": "1568adc899879371",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.64.229:5000/predict",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 690,
+        "y": 660,
+        "wires": [
+            [
+                "7daf64f201866da3"
+            ]
+        ]
+    },
+    {
+        "id": "7daf64f201866da3",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "g": "1568adc899879371",
+        "name": "function 15",
+        "func": "// ถ้า msg.payload เป็น object ให้แปลงเป็น string ก่อน\nvar rawPayload = (typeof msg.payload === \"string\") ? msg.payload : JSON.stringify(msg.payload);\n\n// ลบอักขระบรรทัดใหม่และช่องว่างทั้งหมด\nvar cleanPayload = rawPayload.replace(/(\\r\\n|\\n|\\r|\\s)/g, \"\");\n\n// แปลงจากข้อความเป็น JSON\nvar jsonPayload = JSON.parse(cleanPayload);\n\n// ดึงค่าเซ็นเซอร์\nmsg.payload = {}; // เคลียร์ payload ก่อน\nmsg.payload.di1 = jsonPayload.gx;\nmsg.payload.di2 = jsonPayload.gy;\nmsg.payload.di3 = jsonPayload.gz;\nmsg.payload.di4 = jsonPayload.ax;\nmsg.payload.di5 = jsonPayload.ay;\nmsg.payload.di6 = jsonPayload.az;\n\n// ตรวจสอบค่าการทำนายและความมั่นใจ\nvar prediction = jsonPayload.prediction || \"->\"; // กำหนดค่าเริ่มต้น\nvar confidence = jsonPayload.confidence_percent || 0; // กำหนดค่าเริ่มต้น\n\n// สร้างข้อความผลการทำนาย\nmsg.payload.prediction = `${prediction} (ความมั่นใจ: ${confidence}%)`;\n\n// ส่งค่าทั้งหมดพร้อมกันหลังจากหน่วงเวลา 1 วินาที\nsetTimeout(function() {\n    // ส่งค่าผลลัพธ์หลังจาก 1 วินาที\n    msg.payload.fullResult = {\n        sensorData: {\n            di1: msg.payload.di1,\n            di2: msg.payload.di2,\n            di3: msg.payload.di3,\n            di4: msg.payload.di4,\n            di5: msg.payload.di5,\n            di6: msg.payload.di6\n        },\n        prediction: msg.payload.prediction\n    };\n\n    // ส่งค่าผลลัพธ์ออกไป\n    node.send(msg);\n}, 1000); // หน่วงเวลา 1 วินาที\n\nreturn null; // คืนค่า null เพราะการส่งจะเกิดขึ้นใน setTimeout\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 660,
+        "wires": [
+            [
+                "9b6ebdbb6e7e5d23"
+            ]
+        ]
+    },
+    {
+        "id": "943e9d8547257232",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "g": "1568adc899879371",
+        "name": "function 16",
+        "func": "// ถ้า msg.payload เป็น object ให้แปลงเป็น string ก่อน\nvar rawPayload = (typeof msg.payload === \"string\") ? msg.payload : JSON.stringify(msg.payload);\n\n// ลบอักขระบรรทัดใหม่และช่องว่างทั้งหมด\nvar cleanPayload = rawPayload.replace(/(\\r\\n|\\n|\\r|\\s)/g, \"\");\n\n// แปลงจากข้อความเป็น JSON\nvar jsonPayload = JSON.parse(cleanPayload);\n\n// ดึงค่าเซ็นเซอร์\nmsg.payload = {}; // เคลียร์ payload ก่อน\nmsg.payload.di1 = jsonPayload.gx;\nmsg.payload.di2 = jsonPayload.gy;\nmsg.payload.di3 = jsonPayload.gz;\nmsg.payload.di4 = jsonPayload.ax;\nmsg.payload.di5 = jsonPayload.ay;\nmsg.payload.di6 = jsonPayload.az;\n\n// ตรวจสอบค่าการทำนายและความมั่นใจ\nvar prediction = jsonPayload.prediction || \"---->\"; // กำหนดค่าเริ่มต้น\nvar confidence = jsonPayload.confidence_percent || 0; // กำหนดค่าเริ่มต้น\n\n// สร้างข้อความผลการทำนาย\nmsg.payload.prediction = `${prediction} (ความมั่นใจ: ${confidence}%)`;\n\n// ส่งค่าทั้งหมดพร้อมกัน\nmsg.payload.fullResult = {\n    sensorData: {\n        di1: msg.payload.di1,\n        di2: msg.payload.di2,\n        di3: msg.payload.di3,\n        di4: msg.payload.di4,\n        di5: msg.payload.di5,\n        di6: msg.payload.di6\n    },\n    prediction: msg.payload.prediction\n};\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 700,
+        "wires": [
+            [
+                "9b6ebdbb6e7e5d23"
+            ]
+        ]
+    },
+    {
+        "id": "9b6ebdbb6e7e5d23",
+        "type": "function",
+        "z": "44e8ecb270d0dea8",
+        "g": "1568adc899879371",
+        "name": "function 17",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 680,
+        "wires": [
+            [
+                "f2f0f63784a5ba53"
+            ]
+        ]
+    },
+    {
+        "id": "70fc30b6fc1487d6",
+        "type": "comment",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "name": "แสดงค่า Gyro ในหน่วยของ องศา ต่อ วินาที",
+        "info": "",
+        "x": 1230,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "57b36b7032039eb1",
+        "type": "comment",
+        "z": "44e8ecb270d0dea8",
+        "g": "77d6babde1a7b86c",
+        "name": "แสดงค่าความเร่ง ในหน่วยของ m/s²",
+        "info": "",
+        "x": 1210,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "08230f9f0b04472f",
+        "type": "comment",
+        "z": "44e8ecb270d0dea8",
+        "g": "1568adc899879371",
+        "name": "Prediction",
+        "info": "เป็นส่วนที่ไว้สำหรับทำนายผลของ ดินสไลด์",
+        "x": 680,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "1a55041fba2bd88d",
+        "type": "comment",
+        "z": "44e8ecb270d0dea8",
+        "g": "1568adc899879371",
+        "name": "นำข้อมูลเก็บไว้ใน Google sheet",
+        "info": "",
+        "x": 1260,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "98f75a9ca4e18244",
+        "type": "comment",
+        "z": "44e8ecb270d0dea8",
+        "g": "3f741ed2e7919cfc",
+        "name": "หน่วย และ หัวข้อ",
+        "info": "",
+        "x": 440,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "e71a1eb30b54edf7",
+        "type": "mqtt-broker",
+        "name": "Project",
+        "broker": "192.168.64.229",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "19a7d87c370ef403",
+        "type": "ui-group",
+        "name": "Detail",
+        "page": "60ce6bb0d9a18add",
+        "width": "18",
+        "height": "1",
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "62434c3fc00562df",
+        "type": "ui-group",
+        "name": "Data History",
+        "page": "2b20e0cfae6c3d20",
+        "width": "15",
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "60ce6bb0d9a18add",
+        "type": "ui-page",
+        "name": "Project_Lock",
+        "ui": "bf2a8035970f4cb1",
+        "path": "/page2",
+        "icon": "key",
+        "layout": "grid",
+        "theme": "c2d4aab921469bc3",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "2b20e0cfae6c3d20",
+        "type": "ui-page",
+        "name": "Google Sheet",
+        "ui": "bf2a8035970f4cb1",
+        "path": "/page3",
+        "icon": "database",
+        "layout": "grid",
+        "theme": "c2d4aab921469bc3",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "bf2a8035970f4cb1",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "navigationStyle": "icon",
+        "titleBarStyle": "default"
+    },
+    {
+        "id": "c2d4aab921469bc3",
+        "type": "ui-theme",
+        "name": "Basic Blue Theme",
+        "colors": {
+            "surface": "#4d58ff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px",
+            "density": "default"
+        }
+    }
+]
