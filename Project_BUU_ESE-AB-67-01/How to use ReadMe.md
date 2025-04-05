@@ -17,4 +17,7 @@
 - เปิด Command Prompt หรือ PowerShell แล้วรันคำสั่ง:
   ```bash
   npm install @flowfuse/node-red-dashboard-2-ui-flowviewer @flowfuse/node-red-dashboard-2-ui-iframe @flowfuse/node-red-dashboard-2-ui-led @flowfuse/node-red-dashboard
-### 4.จากนั้น
+### 4.จากนั้นติดตั้งในส่วนของ Model Python.pkl, noderedProject.json และ serverprediction
+- เปิด Command Prompt หรือ PowerShell จากนั้นเลือกไฟล์ที่จะเก็บ แล้วรันคำสั่ง:
+  ```bash
+  
