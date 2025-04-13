@@ -33,4 +33,5 @@
    - คลิกที่ Menu (มุมขวาบน) แล้วเลือก Manage palette
    - ในแท็บ Install ให้ค้นหา Node ที่ต้องการ เช่น @flowfuse/node-red-dashboard-2-ui-flowviewer หรือ @flowfuse/node-red-dashboard
    - คลิก Install เพื่อติดตั้ง Node ดังกล่าว
-
+   - 3.3 สามารถอัปโหลด node ของเราเองได้โดยเป็น File.tgz
+   - 
