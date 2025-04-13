@@ -12,6 +12,7 @@
 - inject – ใช้สำหรับป้อนข้อมูลเข้าสู่ Flow เช่น ส่งข้อความ หรือส่งค่าตามเวลา
 - debug – แสดงค่าที่ถูกส่งผ่าน Node ต่าง ๆ ในหน้าต่าง Debug
   - ![Import](https://drive.google.com/uc?export=view&id=1JccaxXu_MCrL2Hbjbv8aPMjsFAow5Ou0)
+  - ![Import](https://drive.google.com/uc?export=view&id=1L5ckpMvxCG9jcydbMQTQQaZdeooCc7Ap)
 - function – เขียนโค้ด JavaScript เพื่อประมวลผลหรือแปลงค่าต่าง ๆ ตามต้องการ
   - ![Import](https://drive.google.com/uc?export=view&id=1TuUj-ybIhrPVt9eHO_VS8pbn-4_tR3T4)
 - http in / http response – ใช้สำหรับสร้าง API เพื่อรับและตอบกลับข้อมูลผ่าน HTTP****
