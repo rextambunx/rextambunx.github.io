@@ -21,5 +21,16 @@
 - chart / gauge – ใช้แสดงผลข้อมูลแบบกราฟ หรือ มาตรวัด บน Dashboard
   - ![Import](https://drive.google.com/uc?export=view&id=1VFavbBYwSg6GfpRtQs_q1SkQqkhQFkLe)
 - ui node – กลุ่ม Node สำหรับสร้าง UI เช่น ปุ่ม, ตัวเลข, สวิทช์ บน Dashboard (ต้องติดตั้ง node-red-dashboard ก่อน)
-- 
+### 3. วิธีติดตั้ง Node-RED Library (Nodes) เพิ่มเติมมี 2 วิธีคือ
+   - 3.1 ติดตั้งผ่าน Cmd หรือ Terminal วิธีนี้สามารถติดตั้งได้ง่าย
+     ```bash
+     npm install @flowfuse/node-red-dashboard-2-ui-flowviewer @flowfuse/node-red-dashboard-2-ui-iframe @flowfuse/node-red-dashboard-2-ui-led @flowfuse/node-red-dashboard
+   - หลังจากติดตั้ง Node แล้ว คุณสามารถ รีสตาร์ท Node-RED เพื่อให้ Node ใหม่ทำงานได้:
+     ```bash
+     node-red-stop
+     node-red-start
+   - 3.2 ติดตั้งผ่าน Node-RED Palette Manager
+   - คลิกที่ Menu (มุมขวาบน) แล้วเลือก Manage palette
+   - ในแท็บ Install ให้ค้นหา Node ที่ต้องการ เช่น @flowfuse/node-red-dashboard-2-ui-flowviewer หรือ @flowfuse/node-red-dashboard
+   - คลิก Install เพื่อติดตั้ง Node ดังกล่าว
 
