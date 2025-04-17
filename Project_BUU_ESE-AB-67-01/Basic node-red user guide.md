@@ -22,26 +22,29 @@
   - ![Import](https://drive.google.com/uc?export=view&id=1VFavbBYwSg6GfpRtQs_q1SkQqkhQFkLe)
 - ui node – กลุ่ม Node สำหรับสร้าง UI เช่น ปุ่ม, ตัวเลข, สวิทช์ บน Dashboard (ต้องติดตั้ง node-red-dashboard ก่อน)
 ### 3. วิธีติดตั้ง Node-RED Library (Nodes) เพิ่มเติมมี 2 วิธีคือ
-   - 3.1 ติดตั้งผ่าน Cmd หรือ Terminal วิธีนี้สามารถติดตั้งได้ง่าย
+   - 3.1. ติดตั้งผ่าน Cmd หรือ Terminal วิธีนี้สามารถติดตั้งได้ง่าย
      ```bash
      npm install @flowfuse/node-red-dashboard-2-ui-flowviewer @flowfuse/node-red-dashboard-2-ui-iframe @flowfuse/node-red-dashboard-2-ui-led @flowfuse/node-red-dashboard
    - หลังจากติดตั้ง Node แล้ว คุณสามารถ รีสตาร์ท Node-RED เพื่อให้ Node ใหม่ทำงานได้:
      ```bash
      node-red-stop
      node-red-start
-   - 3.2 ติดตั้งผ่าน Node-RED Palette Manager
+   - 3.2. ติดตั้งผ่าน Node-RED Palette Manager
       - คลิกที่ Menu (มุมขวาบน) แล้วเลือก Manage palette
       - ในแท็บ Install ให้ค้นหา Node ที่ต้องการ เช่น @flowfuse/node-red-dashboard-2-ui-flowviewer หรือ @flowfuse/node-red-dashboard
       - คลิก Install เพื่อติดตั้ง Node ดังกล่าว
-   - 3.3 สามารถอัปโหลด node ของเราเองได้โดยเป็น File.tgz
+   - 3.3. สามารถอัปโหลด node ของเราเองได้โดยเป็น File.tgz
       - ตัวอย่างไฟล์ที่ Custom เอง library ที่สร้างขึ้น ให้ดาวโหลดตรงนี้
      ```bash
      https://github.com/rextambunx/rextambunx.github.io/blob/master/Project_BUU_ESE-AB-67-01/node-red-contrib-project_buu_ese_ab_67_01-1.0.0.tgz
 
    - เมื่อโหลดเสร็จสิ้นแล้วให้ทำตามขั้นตอนนี้
+      -   ติดตั้งผ่าน Node-RED Palette Manager
      ![My Diagram](https://drive.google.com/uc?export=view&id=1MACy03UTRJPSdoq-QDYjDB3zTbDkW1Gi)
      ![Node-RED Flow Example](https://drive.google.com/uc?export=view&id=1iQ6PVYbLXW612QArWKGkzBiOGSiD8LXV)
+      -   ทำการติดตั้ง upload ไฟล์ node ที่ custom ขึ้นมาโดยไปดาวโหลดมาจากหัวข้อ 3.3.    
      ![Node-RED Dashboard](https://drive.google.com/uc?export=view&id=1mroLjldpK7E0T374p3Ry4c5O1aDiv7Rb)
+      -   จากนั้นกด Upload แล้วไปดูที่ node ว่ามี node ใหม่ที่ติดตั้งหรือไม่
      ![Node-RED Machine Learning Integration](https://drive.google.com/uc?export=view&id=1zYHv35Y9sUgBALLKiiLqnFrS66oJyv5O)
      ![MPU6050 Sensor Setup](https://drive.google.com/uc?export=view&id=1ODgzqw5zMZQp61do5wWIJueeKouHj9OQ)
      ![System Architecture](https://drive.google.com/uc?export=view&id=1txCB44hiOdcODbfaWuB3NA35UiHovvep)
