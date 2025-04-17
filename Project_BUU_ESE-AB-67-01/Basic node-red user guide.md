@@ -49,6 +49,16 @@
      ![MPU6050 Sensor Setup](https://drive.google.com/uc?export=view&id=1ODgzqw5zMZQp61do5wWIJueeKouHj9OQ)
      ![System Architecture](https://drive.google.com/uc?export=view&id=1txCB44hiOdcODbfaWuB3NA35UiHovvep)
 
+ ###  4. ตัวอย่าง Flow พื้นฐาน
+        [Inject] --ส่งข้อความ--> [Function] --ประมวลผล--> [Debug]
+   - โดยที่ในตัวของ Fucntion node จะเขียน code javascrip ตามนี้:
+        ```bash
+        msg.payload = "สวัสดี Node-RED!";
+        return msg;
+
+   - ![Data to Google Sheet](https://drive.google.com/uc?export=view&id=11bPI87m7TqRBLt8lmwqP9FZeXNZK4ReX)
+
+
 
 
 
