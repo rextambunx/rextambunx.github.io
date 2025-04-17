@@ -58,8 +58,111 @@
 
    - ![Data to Google Sheet](https://drive.google.com/uc?export=view&id=11bPI87m7TqRBLt8lmwqP9FZeXNZK4ReX)
 
+ ###  5. ทาง Project Project_BUU_ESE-AB-67-01 ได้ทำการสร้าง Flow ที่ทำไว้เรียบร้อยเเล้ว (ส่วนเพิ่มเติม)
+   - คลิกที่เมนูด้านขวาบน (สามขีด) > Import
+   - จากนนั้นวาง Flow ได้เลยโดยใช้ .js
+   -    ```bash
+        [
+    {
+        "id": "6d9825bd727346a7",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d69f7de6b0c12db5",
+        "type": "inject",
+        "z": "6d9825bd727346a7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 120,
+        "wires": [
+            [
+                "335c381059489c90"
+            ]
+        ]
+    },
+    {
+        "id": "335c381059489c90",
+        "type": "function",
+        "z": "6d9825bd727346a7",
+        "name": "function 19",
+        "func": "msg.payload = \"สวัสดี Node-RED!\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 160,
+        "wires": [
+            [
+                "4508d6612db1ab9f"
+            ]
+        ]
+    },
+    {
+        "id": "4508d6612db1ab9f",
+        "type": "debug",
+        "z": "6d9825bd727346a7",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2fb5190276df1285",
+        "type": "project_buu_ese_ab_67_01",
+        "z": "6d9825bd727346a7",
+        "x": 780,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "68635863cbfc6f7b",
+        "type": "comment",
+        "z": "6d9825bd727346a7",
+        "name": "",
+        "info": "",
+        "x": 520,
+        "y": 360,
+        "wires": []
+    }
+    ]
 
-
-
-
+-   ในส่วนนี้จะถึงการ import ออกมาใช้ต่างๆ
+  
+ ###  5. 🔐 การเชื่อมต่อกับ MQTT Broker
+ -   เพิ่ม Node mqtt in หรือ mqtt out
+ -   ตั้งค่าเซิร์ฟเวอร์ เช่น mqtt://localhost:1883
+ -   กำหนด Topic ที่ต้องการรับ/ส่ง เช่น sensor/data
+ -   ![Node-RED Control Panel](https://drive.google.com/uc?export=view&id=1GFX4hkrk_BmADkUBi5aWo_axM00zmtpg)
 
