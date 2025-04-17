@@ -34,4 +34,6 @@
       - ในแท็บ Install ให้ค้นหา Node ที่ต้องการ เช่น @flowfuse/node-red-dashboard-2-ui-flowviewer หรือ @flowfuse/node-red-dashboard
       - คลิก Install เพื่อติดตั้ง Node ดังกล่าว
    - 3.3 สามารถอัปโหลด node ของเราเองได้โดยเป็น File.tgz
-   - 
+      - ตัวอย่างไฟล์ที่ Custom เอง library ที่สร้างขึ้น
+     ```bash
+     
