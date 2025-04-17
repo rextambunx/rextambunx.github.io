@@ -34,6 +34,19 @@
       - ในแท็บ Install ให้ค้นหา Node ที่ต้องการ เช่น @flowfuse/node-red-dashboard-2-ui-flowviewer หรือ @flowfuse/node-red-dashboard
       - คลิก Install เพื่อติดตั้ง Node ดังกล่าว
    - 3.3 สามารถอัปโหลด node ของเราเองได้โดยเป็น File.tgz
-      - ตัวอย่างไฟล์ที่ Custom เอง library ที่สร้างขึ้น
+      - ตัวอย่างไฟล์ที่ Custom เอง library ที่สร้างขึ้น ให้ดาวโหลดตรงนี้
      ```bash
-     
+     https://github.com/rextambunx/rextambunx.github.io/blob/master/Project_BUU_ESE-AB-67-01/node-red-contrib-project_buu_ese_ab_67_01-1.0.0.tgz
+
+   - เมื่อโหลดเสร็จสิ้นแล้วให้ทำตามขั้นตอนนี้
+     ![My Diagram](https://drive.google.com/uc?export=view&id=1MACy03UTRJPSdoq-QDYjDB3zTbDkW1Gi)
+     ![Node-RED Flow Example](https://drive.google.com/uc?export=view&id=1iQ6PVYbLXW612QArWKGkzBiOGSiD8LXV)
+     ![Node-RED Dashboard](https://drive.google.com/uc?export=view&id=1mroLjldpK7E0T374p3Ry4c5O1aDiv7Rb)
+     ![Node-RED Machine Learning Integration](https://drive.google.com/uc?export=view&id=1zYHv35Y9sUgBALLKiiLqnFrS66oJyv5O)
+     ![MPU6050 Sensor Setup](https://drive.google.com/uc?export=view&id=1ODgzqw5zMZQp61do5wWIJueeKouHj9OQ)
+     ![System Architecture](https://drive.google.com/uc?export=view&id=1txCB44hiOdcODbfaWuB3NA35UiHovvep)
+
+
+
+
+
