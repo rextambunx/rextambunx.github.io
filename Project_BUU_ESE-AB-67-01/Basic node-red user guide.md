@@ -166,3 +166,6 @@
  -   กำหนด Topic ที่ต้องการรับ/ส่ง เช่น sensor/data
  -   ![Node-RED Control Panel](https://drive.google.com/uc?export=view&id=1GFX4hkrk_BmADkUBi5aWo_axM00zmtpg)
 
+ ###  6. 🧩 วิดิโอสอนการใช้งานเบื้องต้น
+ -   🎥 [ดูวิดีโอการทำงานของ Node-RED](https://drive.google.com/file/d/1j1FHAE96QHWSOKCWtZYmgzIZBcFPKJBw/view?usp=sharing)
+
