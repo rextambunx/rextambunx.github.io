@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@300;400;700&display=swap" rel="stylesheet" />
+  <title>YOLOv8 Real-time Detection</title>
+  <style>
+    body {
+      font-family: 'Athiti', sans-serif;
+      background: linear-gradient(to right, #f2fcfe, #e954e1);
+      color: #000;
+      text-align: center;
+      padding-top: 60px;
+      margin: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    h1 {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    }
+    div {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    /* แถบบน */
+    .topnav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #4f575a;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      font-family: 'Athiti', sans-serif;
+      font-weight: 700;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    #mode-toggle {
+      margin-left: 15px;
+      padding: 5px 10px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 20px;
+      color: inherit;
+      user-select: none;
+    }
+
+    #container {
+      position: relative;
+      width: 640px;
+      height: 480px;
+      border: 4px solid #00bcd4;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      margin: auto;
+    }
+    video, canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1200px;
+      height: 1100px;
+    }
+
+    /* ปรับกล่องรูปภาพและ canvas ให้ซ้อนกัน */
+    #image-container {
+      position: relative;
+      display: none;
+      margin: auto;
+      max-width: 640px;
+    }
+    #previewImage {
+      width: 100%;
+      border: 3px solid #00bcd4;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      display: block;
+    }
+    #detectionCanvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+    #detection-info-list {
+      margin-top: 25px;
+      padding: 15px;
+      background-color: #ffffffcc;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      display: inline-block;
+      max-width: 640px;
+      font-size: 18px;
+      line-height: 1.8;
+      animation: pulse 1.5s ease-in-out;
+      text-align: left;
+    }
+
+    body.dark-mode #detection-info-list {
+      background-color: #2a2a2acc;
+      color: #eee;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    /* Dark Mode */
+    body.dark-mode {
+      background: #121212;
+      color: #eee;
+    }
+    body.dark-mode h1,
+    body.dark-mode div {
+      text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+    }
+    body.dark-mode .topnav {
+      background-color: #222;
+      color: #ddd;
+    }
+    body.dark-mode #container {
+      border-color: #0097a7;
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .custom-upload-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #00bcd4, #8e24aa);
+      color: white;
+      padding: 12px 24px;
+      font-size: 18px;
+      font-family: 'Athiti', sans-serif;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      user-select: none;
+    }
+
+    .custom-upload-btn:hover {
+      background: linear-gradient(135deg, #0097a7, #6a1b9a);
+      transform: scale(1.05);
+    }
+
+    body.dark-mode .custom-upload-btn {
+      background: linear-gradient(135deg, #37474f, #512da8);
+      color: #fff;
+    }
+
+    body.dark-mode .custom-upload-btn:hover {
+      background: linear-gradient(135deg, #263238, #311b92);
+    }
+
+    #hamburger {
+      font-size: 26px;
+      cursor: pointer;
+      user-select: none;
+      margin-left: 10px;
+    }
+
+    .side-menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 2000;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+    }
+
+    .side-menu a {
+      padding: 10px 10px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #f1f1f1;
+      display: block;
+      transition: 0.2s;
+    }
+
+    .side-menu a:hover {
+      background-color: #575757;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 30px;
+      color: #f1f1f1;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <span id="hamburger" title="Menu">&#9776;</span>
+    <span style="margin-left: 15px;">Kanchanit noppansiri Detection Web</span>
+    <button id="mode-toggle" title="Toggle Dark/Light Mode">🌙</button>
+  </div>
+
+  <!-- Side Menu -->
+  <div id="side-menu" class="side-menu">
+    <a href="javascript:void(0)" class="close-btn" id="close-side-menu">&times;</a>
+    <a href="http://127.0.0.1:8004/static/index.html">ตรวจจับด้วยกล้อง 📸</a>
+  </div>
+
+  <h1>Upload image for detection</h1>
+  <label for="imageUpload" class="custom-upload-btn">📁 เลือกรูปภาพ</label>
+  <input type="file" id="imageUpload" accept="image/*" style="display: none;" />
+
+  <br><br>
+
+  <!-- ภาพและ Canvas ซ้อนกัน -->
+  <div id="image-container">
+    <img id="previewImage" src="" alt="Uploaded Image" />
+    <canvas id="detectionCanvas"></canvas>
+  </div>
+
+  <!-- แสดงรายการผลการตรวจจับ -->
+  <div id="detection-info-list"></div>
+
+<script>
+  // Dark/Light Mode toggle
+  const toggleBtn = document.getElementById('mode-toggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    if(document.body.classList.contains('dark-mode')) {
+      toggleBtn.textContent = '☀️';
+    } else {
+      toggleBtn.textContent = '🌙';
+    }
+  });
+
+  // Side menu toggle
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('side-menu').style.width = '250px';
+  });
+  document.getElementById('close-side-menu').addEventListener('click', () => {
+    document.getElementById('side-menu').style.width = '0';
+  });
+
+  // Handle image upload and detection
+  document.getElementById('imageUpload').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const previewImg = document.getElementById('previewImage');
+      const canvas = document.getElementById('detectionCanvas');
+      const container = document.getElementById('image-container');
+
+      previewImg.src = e.target.result;
+      container.style.display = 'block'; // แสดง container
+
+      previewImg.onload = () => {
+        // ปรับขนาด canvas ตามขนาดภาพที่โหลดมา
+        canvas.width = previewImg.width;
+        canvas.height = previewImg.height;
+
+        const formData = new FormData();
+        formData.append('file', file);
+
+        fetch('http://127.0.0.1:8000/detect', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+          drawDetections(data.detections, canvas);
+          showDetectionInfo(data.detections);
+        })
+        .catch(error => {
+          console.error('Detection failed:', error);
+          alert('การตรวจจับล้มเหลว กรุณาลองใหม่อีกครั้ง');
+        });
+      };
+    };
+    reader.readAsDataURL(file);
+  });
+
+  // วาดกรอบและข้อความบน canvas
+  function drawDetections(detections, canvas) {
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    detections.forEach(det => {
+      const [x1, y1, x2, y2] = det.bbox;
+      const w = x2 - x1;
+      const h = y2 - y1;
+      const label = `${det.class_name} (${(det.confidence * 100).toFixed(1)}%)`;
+
+      ctx.strokeStyle = '#00e676';
+      ctx.lineWidth = 2;
+      ctx.strokeRect(x1, y1, w, h);
+
+      ctx.fillStyle = 'rgba(0, 230, 118, 0.85)';
+      ctx.font = '16px Athiti';
+      ctx.fillText(label, x1 + 4, y1 + 20);
+    });
+  }
+
+  // แสดงข้อความผลการตรวจจับ
+  function showDetectionInfo(detections) {
+    const infoDiv = document.getElementById('detection-info-list');
+    infoDiv.innerHTML = ''; // ล้างข้อมูลเก่า
+
+    if (detections.length === 0) {
+      infoDiv.innerHTML = '<p style="color: red; font-weight: bold;">ไม่พบวัตถุใด ๆ ในภาพ</p>';
+      return;
+    }
+
+    detections.forEach(det => {
+      const p = document.createElement('p');
+      p.innerHTML = `🔍 ตรวจพบ <strong>${det.class_name}</strong> ด้วยความแม่นยำ <strong>${(det.confidence * 100).toFixed(1)}%</strong>`;
+      infoDiv.appendChild(p);
+    });
+  }
+</script>
+
+</body>
+</html>
