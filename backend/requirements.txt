@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+jinja2
+python-docx
+docxtpl
+reportlab
+pillow
